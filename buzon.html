@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Agustín Loxicha</title>
+  <link rel="icon" type="image/png" href="logo2.png">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header id="Inicio">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <img src="escudo.png" alt="Estado de Oaxaca" class="escudo2">
+<div class="textos">
+      <h1>MUNICIPIO DE SAN AGUSTÍN LOXICHA, </h1>
+       <h1> DISTRITO DE POCHUTLA, OAXACA</h1>
+       <br>
+      <p>ADMINISTRACIÓN MUNICIPAL 2023-2025</p>
+    </div>
+
+    <img src="logo2.png" alt="Escudo" class="escudo">
+    
+  </header>
+
+  <br>
+  <div class="boton-regresar" style="display: flex; justify-content: center;">
+  <a href="index.html" class="btn-volver">⮐ Regresar al inicio</a>
+</div>
+
+
+
+
+
+  <main>
+<section id="buzon" class="buzon">
+  <h2 style="text-align: left;">Buzón de Quejas y Sugerencias</h2>
+
+  <div class="buzon-container">
+    <textarea id="mensaje" placeholder="Escribe aquí tu queja o sugerencia..."></textarea>
+    <button id="enviarBtn">Enviar</button>
+    <p id="mensajeEnviado" class="oculto">✅ ¡Tu queja ha sido enviada correctamente!</p>
+  </div>
+</section>
+
+<style>
+  .buzon {
+    text-align: center;
+    padding: 40px;
+    background: #f2eaea;
+  }
+
+  .buzon-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  button {
+    background-color: #800000; /* color vino */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background-color: #b30000;
+  }
+
+  #mensajeEnviado {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+  }
+
+  .oculto {
+    display: none;
+  }
+</style>
+
+<script>
+  document.getElementById("enviarBtn").addEventListener("click", function() {
+    const mensaje = document.getElementById("mensaje").value.trim();
+    const mensajeEnviado = document.getElementById("mensajeEnviado");
+
+    if (mensaje === "") {
+      alert("Por favor, escribe tu queja antes de enviarla.");
+      return;
+    }
+
+    mensajeEnviado.classList.remove("oculto");
+    document.getElementById("mensaje").value = ""; // limpia el campo
+  });
+</script>
+
+
+<br>
+<br>  
+
+ 
+
+
+
+
+  </main>
+
+  <footer id="contactos">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>ADMINISTRACIÓN MUNICIPAL 2023-2025</h1>
+    <br>
+   
+    <br>
+    <br>
+    <br>
+  </footer>
+</body>
+</html>

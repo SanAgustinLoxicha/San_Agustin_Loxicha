@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Agustín Loxicha</title>
+  <link rel="icon" type="image/png" href="logo2.png">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <header id="Inicio">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <img src="escudo.png" alt="Estado de Oaxaca" class="escudo2">
+<div class="textos">
+      <h1>MUNICIPIO DE SAN AGUSTÍN LOXICHA, </h1>
+       <h1> DISTRITO DE POCHUTLA, OAXACA</h1>
+       <br>
+      <p>ADMINISTRACIÓN MUNICIPAL 2023-2025</p>
+    </div>
+
+    <img src="logo2.png" alt="Escudo" class="escudo">
+    
+  </header>
+<br>
+   <div class="boton-regresar" style="display: flex; justify-content: center;">
+  <a href="index.html" class="btn-volver">⮐ Regresar al inicio</a>
+</div>
+  <main>
+<section id="gaceta" class="gaceta">
+  <h2 style="text-align: left;">GACETA</h2>
+
+  <div class="pdf-grid">
+
+    <!-- 1. Manual de Organización -->
+    <div class="pdf-item color1">
+      <a href="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/1.%20MANUAL.pdf" target="_blank">
+        <img src="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/procedimiento2.png" alt="Manual de organización" class="pdf-img">
+        <h3>Manual de Organización y Políticas Laborales</h3>
+      </a>
+    </div>
+
+    <!-- 2. Manual de Procedimientos -->
+    <div class="pdf-item color2">
+      <a href="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/2.%20MANUAL%20DE%20PROCEDIMIENTOS.pdf" target="_blank">
+        <img src="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/procedimiento.png" alt="Manual de procedimientos" class="pdf-img">
+        <h3>Manual de Procedimientos</h3>
+      </a>
+    </div>
+
+    <!-- 3. Bando de Policía -->
+    <div class="pdf-item color3">
+      <a href="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/3.%20BANDO%20DE%20POLICIA%20SAN%20AGUSTIN%20LOXICHA.pdf" target="_blank">
+        <img src="policia.png" alt="Bando de policía" class="pdf-img">
+        <h3>Bando de Policía San Agustín Loxicha</h3>
+      </a>
+    </div>
+
+    <!-- 4. Código de Ética -->
+    <div class="pdf-item color4">
+      <a href="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/4.%20CODIGO%20DE%20ETICA.pdf" target="_blank">
+        <img src="etica.png" alt="Código de ética" class="pdf-img">
+        <h3>Código de Ética</h3>
+      </a>
+    </div>
+
+    <!-- 5. Código de Conducta -->
+    <div class="pdf-item color5">
+      <a href="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/5.%20CODIGO%20DE%20CONDUCTA.pdf" target="_blank">
+        <img src="conducta.png" alt="Código de conducta" class="pdf-img">
+        <h3>Código de Conducta</h3>
+      </a>
+    </div>
+
+    <!-- 6. Plan Municipal -->
+    <div class="pdf-item color6">
+      <a href="https://SanAgustinLoxicha.github.io/San_Agustin_Loxicha/6.%20PLAN%20MUNICIPAL.pdf" target="_blank">
+        <img src="plan.png" alt="Plan municipal" class="pdf-img">
+        <h3>Plan Municipal de Desarrollo San Agustín Loxicha 2023–2025</h3>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<style>
+.gaceta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pdf-item {
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.pdf-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.pdf-item a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+}
+
+.pdf-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 🎨 Paleta de colores */
+.color1 { background-color: #7B1E3A; }   /* Vino */
+.color2 { background-color: #E6B800; color: #333; }
+.color3 { background-color: #0D47A1; }
+.color4 { background-color: #2E7D32; }
+.color5 { background-color: #5D4037; }
+.color6 { background-color: #E65100; }
+
+.color1:hover { background-color: #9C274A; }
+.color2:hover { background-color: #FFD54F; color: #333; }
+.color3:hover { background-color: #1565C0; }
+.color4:hover { background-color: #388E3C; }
+.color5:hover { background-color: #6D4C41; }
+.color6:hover { background-color: #F57C00; }
+
+</style>
+
+
+<br>
+<br>  
+
+
+
+
+
+  </main>
+
+  <footer id="contactos">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>ADMINISTRACIÓN MUNICIPAL 2023-2025</h1>
+    <br>
+   
+    <br>
+    <br>
+    <br>
+  </footer>
+</body>
+</html>
