@@ -1,7 +1,7 @@
-/* Fuente moderna */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
-/* ====== VARIABLES ====== */
+
 :root {
   --vino: #6b0f1a;
   --vino-oscuro: #3d0a0f;
@@ -10,18 +10,18 @@
   --blanco: #ffffff;
 }
 
-/* ====== ESTILOS GENERALES ====== */
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   color: #333;
   overflow-x: hidden;
 
-  /* Fondo con imagen */
-  background-image: url('cafe1.jpg');  /* Asegúrate que la ruta sea correcta */
-  background-size: cover;              /* La imagen cubre toda la pantalla */
-  background-repeat: no-repeat;        /* No se repite */
-  background-position: center center;  /* Centrada */
+  
+  background-image: url('cafe1.jpg'); 
+  background-size: cover;             
+  background-repeat: no-repeat;       
+  background-position: center center; 
 }
 
 
@@ -33,7 +33,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ====== HEADER ====== */
+
 header {
   position: relative;
   width: 100%;
@@ -47,7 +47,7 @@ header {
   background: url("fondo.jpeg") no-repeat center/cover;
 }
 
-/* Overlay oscuro */
+
 header .overlay {
   position: absolute;
   top: 0;
@@ -58,7 +58,7 @@ header .overlay {
   z-index: 0;
 }
 
-/* Contenedor del contenido (texto + imágenes) */
+
 .header-content {
   position: relative;
   z-index: 2;
@@ -71,7 +71,7 @@ header .overlay {
   animation: fadeInDown 1s ease;
 }
 
-/* ===== Texto centrado ===== */
+
 .header-content .textos {
   flex: 1;
   text-align: center;
@@ -88,14 +88,14 @@ header h1, header p {
   line-height: 1.3;
 }
 
-/* Primera y segunda línea (h1) */
+
 header h1 {
   font-size: 2.3rem;
   letter-spacing: 1px;
   font-weight: 600;
 }
 
-/* Tercera línea (p) */
+
 header p {
   font-size: 1.3rem;
   font-weight: 300;
@@ -103,7 +103,7 @@ header p {
   color: #f1f1f1;
 }
 
-/* ===== Escudos laterales ===== */
+
 header .escudo2,
 header .escudo {
   width: 14vw;
@@ -113,7 +113,7 @@ header .escudo {
   opacity: 0.95;
 }
 
-/* ====== RESPONSIVO ====== */
+
 @media (max-width: 900px) {
   .header-content {
     flex-wrap: wrap;
@@ -149,7 +149,7 @@ header .escudo {
   }
 }
 
-/* ====== NAVBAR ====== */
+
 nav {
   background-color: var(--vino);
   box-shadow: 0 3px 10px rgba(0,0,0,0.2);
@@ -180,7 +180,7 @@ nav a:hover {
   transform: scale(1.1);
 }
 
-/* ====== MAIN ====== */
+
 main {
   padding: 3rem 1.5rem;
   max-width: 1000px;
@@ -200,16 +200,16 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* ====== DOCUMENTOS ====== */
+
 
 
 
 .pdf-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Siempre 3 columnas */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem;
   margin-top: 2rem;
-  overflow-x: auto; /* Permite desplazamiento horizontal si no caben */
+  overflow-x: auto;
 }
 
 .pdf-card {
@@ -218,7 +218,7 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  min-width: 320px; /* asegura que no se reduzcan demasiado */
+  min-width: 320px; 
 }
 
 
@@ -229,9 +229,9 @@ h2 {
 
 .pdf-card iframe {
   width: 100%;
-  height: 600px; /* más alto para mostrar varias páginas */
+  height: 600px; 
   border: none;
-  pointer-events: auto; /* permite interacción */
+  pointer-events: auto; 
   background-color: #fdfdfd;
 }
 
@@ -244,7 +244,7 @@ h2 {
   text-align: center;
 }
 
-/* ====== FOOTER ====== */
+
 footer {
   position: relative;
   background: url("fondo.jpeg") no-repeat center/cover;
@@ -257,7 +257,7 @@ footer {
   overflow: hidden;
 }
 
-/* Overlay oscuro en footer */
+
 footer::before {
   content: "";
   position: absolute;
@@ -266,13 +266,13 @@ footer::before {
   z-index: 0;
 }
 
-/* Contenido sobre overlay */
+
 footer * {
   position: relative;
   z-index: 1;
 }
 
-/* ====== ANIMACIONES ====== */
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -284,7 +284,7 @@ footer * {
   }
 }
 
-/* ====== RESPONSIVO ====== */
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.5rem;
@@ -301,14 +301,14 @@ footer * {
 }
 
 
-/* ====== BOTÓN VOLVER ====== */
+
 .boton-volver {
   text-align: center;
   margin: 40px 0;
 }
 
 .btn-volver {
-  background-color: #6b4f2a; /* color café */
+  background-color: #6b4f2a; 
   color: white;
   padding: 12px 25px;
   text-decoration: none;
